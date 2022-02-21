@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\crew\background-crew-desktop.jpg" />
+    <None Include="wwwroot\assets\crew\background-crew-mobile.jpg" />
+    <None Include="wwwroot\assets\crew\background-crew-tablet.jpg" />
+    <None Include="wwwroot\assets\crew\image-anousheh-ansari.png" />
+    <None Include="wwwroot\assets\crew\image-anousheh-ansari.webp" />
+    <None Include="wwwroot\assets\crew\image-douglas-hurley.png" />
+    <None Include="wwwroot\assets\crew\image-douglas-hurley.webp" />
+    <None Include="wwwroot\assets\crew\image-mark-shuttleworth.png" />
+    <None Include="wwwroot\assets\crew\image-mark-shuttleworth.webp" />
+    <None Include="wwwroot\assets\crew\image-victor-glover.png" />
+    <None Include="wwwroot\assets\crew\image-victor-glover.webp" />
+    <None Include="wwwroot\assets\destination\background-destination-desktop.jpg" />
+    <None Include="wwwroot\assets\destination\background-destination-mobile.jpg" />
+    <None Include="wwwroot\assets\destination\background-destination-tablet.jpg" />
+    <None Include="wwwroot\assets\destination\image-europa.png" />
+    <None Include="wwwroot\assets\destination\image-europa.webp" />
+    <None Include="wwwroot\assets\destination\image-mars.png" />
+    <None Include="wwwroot\assets\destination\image-mars.webp" />
+    <None Include="wwwroot\assets\destination\image-moon.png" />
+    <None Include="wwwroot\assets\destination\image-moon.webp" />
+    <None Include="wwwroot\assets\destination\image-titan.png" />
+    <None Include="wwwroot\assets\destination\image-titan.webp" />
+    <None Include="wwwroot\assets\favicon-32x32.png" />
+    <None Include="wwwroot\assets\home\background-home-desktop.jpg" />
+    <None Include="wwwroot\assets\home\background-home-mobile.jpg" />
+    <None Include="wwwroot\assets\home\background-home-tablet.jpg" />
+    <None Include="wwwroot\assets\shared\icon-close.svg" />
+    <None Include="wwwroot\assets\shared\icon-hamburger.svg" />
+    <None Include="wwwroot\assets\shared\logo.svg" />
+    <None Include="wwwroot\assets\technology\background-technology-desktop.jpg" />
+    <None Include="wwwroot\assets\technology\background-technology-mobile.jpg" />
+    <None Include="wwwroot\assets\technology\background-technology-tablet.jpg" />
+    <None Include="wwwroot\assets\technology\image-launch-vehicle-landscape.jpg" />
+    <None Include="wwwroot\assets\technology\image-launch-vehicle-portrait.jpg" />
+    <None Include="wwwroot\assets\technology\image-space-capsule-landscape.jpg" />
+    <None Include="wwwroot\assets\technology\image-space-capsule-portrait.jpg" />
+    <None Include="wwwroot\assets\technology\image-spaceport-landscape.jpg" />
+    <None Include="wwwroot\assets\technology\image-spaceport-portrait.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.3.6" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,80 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SpaceTourismWebSite
+build_property.RootNamespace = SpaceTourismWebSite
+build_property.ProjectDir = C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Controls/CrewMemberComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ3Jld01lbWJlckNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Controls/PlanetsComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUGxhbmV0c0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/CrewComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3Jld0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/DestinationComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGluYXRpb25Db21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/TechnologyComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVjaG5vbG9neUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Shared/NavBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdkJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4fvnpy19ku
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-pirtjx4kq4
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
