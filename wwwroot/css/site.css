@@ -10,6 +10,18 @@ body {
 
 .NavBar {
     border: 1px solid orange;
+    margin-top: 37px;
+    height: 96px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.NavRect {
+    background-color: #979797;
+    opacity: 0.4;
+    height: 96px;
+    width: 830px;
 }
 
 
