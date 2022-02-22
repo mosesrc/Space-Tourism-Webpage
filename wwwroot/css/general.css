@@ -1,0 +1,39 @@
+﻿
+/*  CUSTOM VARIABLES  */
+:root {
+    --black: #0b0d17;
+    --light-blue: #D0D6F9;
+    --tan-light-yellow: #FFFFFF;
+}
+
+/*  GOOGLE FONT  */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+/* General Style For Website */
+* {
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 900px;
+    width: 1440px;
+    background-image: url("/assets/home/background-home-desktop.jpg")
+}
+
+.NavBar {
+    margin-top: 37px;
+    height: 96px;
+    display: flex;
+}
+
+.NavRect {
+    background-color: #979797;
+    opacity: 0.4;
+    height: 96px;
+    width: 830px;
+}
