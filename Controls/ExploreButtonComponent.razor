@@ -1,5 +1,20 @@
-﻿ <div class="explore-btn">
-        <h5>EXPLORE</h5>
+﻿@inject IJSRuntime JsRuntime
+
+<div class="container">
+
+    <div class="explore-btn">
+        <h5><a @onmouseover="ShowOverlay" href="#">EXPLORE</a></h5>
     </div>
 
-<div class="circle-haze"></div>
+
+    <div class="circle-overlay">
+    </div>
+</div>
+
+@code {
+
+    async Task ShowOverlay()
+    {
+        await JsRuntime.InvokeVoidAsync(identifier:"btnOverlay");
+    }
+}

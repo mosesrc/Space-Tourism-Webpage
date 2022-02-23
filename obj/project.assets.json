@@ -1,45 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Westwind.AspNetCore.LiveReload/0.3.6": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Westwind.AspNetCore.LiveReload.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Westwind.AspNetCore.LiveReload.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "Westwind.AspNetCore.LiveReload/0.3.6": {
-      "sha512": "BEEHzasKzZ6s7cbEt9SHfLAIQng101aJNO5nvWsvoUvUrGd+AIpPB9D69ULlU6VqGt1avbfVadyQLMC1xn+vZw==",
-      "type": "package",
-      "path": "westwind.aspnetcore.livereload/0.3.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net5.0/Westwind.AspNetCore.LiveReload.dll",
-        "lib/net5.0/Westwind.AspNetCore.LiveReload.xml",
-        "lib/net6.0/Westwind.AspNetCore.LiveReload.dll",
-        "lib/net6.0/Westwind.AspNetCore.LiveReload.xml",
-        "lib/netcoreapp3.1/Westwind.AspNetCore.LiveReload.dll",
-        "lib/netcoreapp3.1/Westwind.AspNetCore.LiveReload.xml",
-        "westwind.aspnetcore.livereload.0.3.6.nupkg.sha512",
-        "westwind.aspnetcore.livereload.nuspec"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Westwind.AspNetCore.LiveReload >= 0.3.6"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\rynmo\\.nuget\\packages\\": {}
@@ -79,12 +45,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Westwind.AspNetCore.LiveReload": {
-            "target": "Package",
-            "version": "[0.3.6, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

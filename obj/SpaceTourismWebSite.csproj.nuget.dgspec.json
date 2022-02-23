@@ -39,12 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Westwind.AspNetCore.LiveReload": {
-              "target": "Package",
-              "version": "[0.3.6, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -47,8 +47,4 @@
     <None Include="wwwroot\assets\technology\image-spaceport-portrait.jpg" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.3.6" />
-  </ItemGroup>
-
 </Project>

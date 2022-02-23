@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u6MrJ99l20zVqo8DcTFcYTB+DPuyDzH+nkI+7GPoYJrwBPtyK9M0DbTEK8jQJ0aoUzaam3LKMJI5R+KlMbuqmQ==",
+  "dgSpecHash": "ihqoncb6yAL79hLbgC0ZZrtHnwDVG5zTkTXouVjlCYK0rR33p9zXx4XIKNYDMAzWbRPLwYXnWvFMryxsuaKFzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rynmo\\OneDrive\\Desktop\\MSSA\\UnitedTraining\\Project3\\SpaceTourismWebSite\\SpaceTourismWebSite.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\rynmo\\.nuget\\packages\\westwind.aspnetcore.livereload\\0.3.6\\westwind.aspnetcore.livereload.0.3.6.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

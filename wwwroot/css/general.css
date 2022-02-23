@@ -21,17 +21,19 @@ font-family: 'Bellefair', serif;
 }
 
 html {
-    height: 100%;
+    height: 900px;
     width: 1440px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
 body {
     color: white;
     min-height: 100%;
-    background-image: url("/assets/home/background-home-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("/assets/home/background-home-desktop.jpg") no-repeat center center fixed;
 }
 
 /*  NavBar  */
@@ -123,38 +125,47 @@ body {
     height: 382px;
     width: 1109px;
     margin: 254px 165px 131px 165px;
-    border: 1px solid orange;
     display: flex;
     justify-content: space-between;
 }
 
-.home-body h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-    letter-spacing: 4.72px;
-    margin-bottom: 58px;
-}
+    .home-body h3 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        margin-bottom: 58px;
+    }
 
-.home-body h1 {
-    font-family: 'Bellefair', serif;
-    font-size: 150px;
-    margin-bottom: 24px;
-}
+    .home-body h1 {
+        font-family: 'Bellefair', serif;
+        font-size: 150px;
+        margin-bottom: 24px;
+    }
 
 .space-message {
-    border: 1px solid orange;
     height: 100%;
     width: 450px;
 }
 
-.space-message p {
-    font-family: 'Barlow', sans-serif;
-    font-size: 18px;
-    line-height: 32px;
-    width: 444px;
-}
+    .space-message p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: 444px;
+    }
 
 /*  Explore Button  */
+.container {
+    position: absolute;
+    left: 911px;
+    top: 405px;
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .explore-btn {
     font-family: 'Bellefair', serif;
     font-size: 32px;
@@ -162,22 +173,28 @@ body {
     color: var(--black);
     height: 274px;
     width: 274px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--white);
     border-radius: 50%;
-    margin-top: auto;
+    z-index: 1;
 }
 
-.circle-haze {
+.circle-overlay {
     position: absolute;
-    height: 274px;
-    width: 274px;
-    left: 1001px;
-    top: 495px;
-    background-color: aqua;
-    border: 2px solid orange;
-    opacity: 0.3;
+    background: var(--white);
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    mix-blend-mode: normal;
+    border: none;
+    opacity: 0;
+    transition: .4s
+}
+
+.container a:link,
+.container a:visited {
+    text-decoration: none;
+    color: var(--black);
 }

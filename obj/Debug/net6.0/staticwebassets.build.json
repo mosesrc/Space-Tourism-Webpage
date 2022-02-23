@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GuYcJjQKwbT0HXCIsgv1cR9WkOgDbQjnPeTTH1rTTL8=",
+  "Hash": "Xn0RNmP04Nxf+URsgBx6cqEJSrRiEvpm7IPOaBI4Xeg=",
   "Source": "SpaceTourismWebSite",
   "BasePath": "_content/SpaceTourismWebSite",
   "Mode": "Default",
@@ -1664,6 +1664,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\rynmo\\OneDrive\\Desktop\\MSSA\\UnitedTraining\\Project3\\SpaceTourismWebSite\\wwwroot\\js\\app.js",
+      "SourceId": "SpaceTourismWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rynmo\\OneDrive\\Desktop\\MSSA\\UnitedTraining\\Project3\\SpaceTourismWebSite\\wwwroot\\",
+      "BasePath": "_content/SpaceTourismWebSite",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
     }
   ]
 }
