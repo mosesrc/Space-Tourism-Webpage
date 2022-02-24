@@ -1,5 +1,4 @@
-﻿// Hover effect on the Explore button
-function btnOverlay() {
+﻿function btnOverlay() {
     const btn = document.querySelector('.explore-btn h5 a');
     let overlay = document.querySelector('.circle-overlay');
 

@@ -178,7 +178,7 @@ body {
     align-items: center;
     background-color: var(--white);
     border-radius: 50%;
-    z-index: 1;
+    
 }
 
 .circle-overlay {
@@ -190,7 +190,7 @@ body {
     mix-blend-mode: normal;
     border: none;
     opacity: 0;
-    transition: .4s
+    transition: .4s;
 }
 
 .container a:link,
