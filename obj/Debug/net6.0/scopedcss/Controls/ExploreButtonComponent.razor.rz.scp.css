@@ -1,0 +1,46 @@
+
+/*  Explore Button  */
+
+.container[b-augwjhhhch] {
+    position: absolute;
+    left: 911px;
+    top: 405px;
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-btn[b-augwjhhhch] {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--black);
+    height: 274px;
+    width: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-overlay[b-augwjhhhch] {
+    position: absolute;
+    background: var(--white);
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    mix-blend-mode: normal;
+    border: none;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.container a:link[b-augwjhhhch],
+.container a:visited[b-augwjhhhch] {
+    text-decoration: none;
+    color: var(--black);
+}
