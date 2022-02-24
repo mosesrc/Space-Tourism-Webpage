@@ -23,15 +23,12 @@ font-family: 'Bellefair', serif;
 html {
     height: 900px;
     width: 1440px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 
 body {
-    color: white;
+    color: var(--white);
     min-height: 100%;
     background: url("/assets/home/background-home-desktop.jpg") no-repeat center center fixed;
 }
@@ -42,7 +39,6 @@ body {
     margin: 37px 0 0 auto;
     height: 96px;
     width: 1385px;
-    color: var(--white);
     letter-spacing: 2.7px;
     display: flex;
     align-items: center;
@@ -61,17 +57,17 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-    .NavRect ul {
-        width: 80%;
-        margin-left: 30px;
-        display: flex;
-        justify-content: space-evenly;
-        margin-left: 57px;
-    }
+.NavRect ul {
+    width: 80%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 57px;
+}
 
-        .NavRect ul li {
-            display: flex;
-        }
+.NavRect ul li {
+    display: flex;
+}
 
     .NavRect a {
         display: inline-block;
@@ -79,25 +75,23 @@ body {
         height: 55%;
         top: 42px;
         font-size: 16px;
+        text-decoration: none;
     }
 
 
-        .NavRect a:link {
-            text-decoration: none;
-        }
+    .NavRect a:link, .NavRect a:visited {
+        
+        color: var(--white);
+    }
 
-        .NavRect a:visited {
-            color: var(--white);
-        }
+.NavRect a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+}
 
-        .NavRect a:hover {
-            border-bottom: 3px solid rgba(255, 255, 255, 0.4);
-        }
-
-        .NavRect a:active {
-            text-decoration: none;
-            border-bottom: 3px solid var(--white);
-        }
+.NavRect a:active {
+    text-decoration: none;
+    border-bottom: 3px solid var(--white);
+}
 
 
 .line {
@@ -129,30 +123,30 @@ body {
     justify-content: space-between;
 }
 
-    .home-body h3 {
-        font-family: 'Barlow Condensed', sans-serif;
-        font-size: 28px;
-        letter-spacing: 4.72px;
-        margin-bottom: 58px;
-    }
+.home-body h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin-bottom: 58px;
+}
 
-    .home-body h1 {
-        font-family: 'Bellefair', serif;
-        font-size: 150px;
-        margin-bottom: 24px;
-    }
+.home-body h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    margin-bottom: 24px;
+}
 
 .space-message {
     height: 100%;
     width: 450px;
 }
 
-    .space-message p {
-        font-family: 'Barlow', sans-serif;
-        font-size: 18px;
-        line-height: 32px;
-        width: 444px;
-    }
+.space-message p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    width: 444px;
+}
 
 /*  Explore Button  */
 .container {
@@ -178,7 +172,7 @@ body {
     align-items: center;
     background-color: var(--white);
     border-radius: 50%;
-    
+    z-index: 1;
 }
 
 .circle-overlay {
@@ -190,7 +184,7 @@ body {
     mix-blend-mode: normal;
     border: none;
     opacity: 0;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .container a:link,
