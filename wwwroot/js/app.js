@@ -10,3 +10,8 @@
         overlay.style.opacity = "0";
     });
 }
+
+function backgroundImgChange(imageUrl) {
+    const body = document.querySelector('body')
+    body.style.background = `url(${imageUrl}) no-repeat center fixed`;
+}

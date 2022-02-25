@@ -30,3 +30,12 @@ C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Shared\NavBar.razor.rz.scp.css
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\ExploreButtonComponent.razor.rz.scp.css
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\bin\Debug\net6.0\Data\crew-members.json
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\bin\Debug\net6.0\Data\destinations.json
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\bin\Debug\net6.0\Data\technologies.json
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\PlanetsComponent.razor.rz.scp.css
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Pages\DestinationComponent.razor.rz.scp.css
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\SpaceTourismWebSite.csproj.CopyComplete
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Pages\CrewComponent.razor.rz.scp.css
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\SubTitleComponent.razor.rz.scp.css

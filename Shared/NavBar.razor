@@ -1,16 +1,48 @@
-﻿
+﻿@inject IJSRuntime JsRuntime
+
 <div class="NavBar">
         <div><img class="logo" src="assets/shared/logo.svg"></div>
         <div class="line"></div>
         <div class="NavRect">
             <ul>
-                <li> <a href="/"> <b>00</b> HOME </a> </li>
-                <li> <a href="destinations"> <b>01</b> DESTINATION </a> </li>
-                <li> <a href="crew-members"> <b>02</b> CREW </a> </li>
-                <li> <a href="technologies"> <b>03</b> TECHNOLOGY </a> </li>
+                <li> <a href="/" @onclick="@(async () => { Home(); await ChangeBackground(); } )"  > <b>00</b> HOME </a> </li>
+                <li> <a href="destinations" @onclick="@(async () => { Destination(); await ChangeBackground(); } )"> <b>01</b> DESTINATION </a> </li>
+                <li> <a href="crew-members" @onclick="@(async () => { Crew(); await ChangeBackground(); } )"> <b>02</b> CREW </a> </li>
+                <li> <a href="technologies" @onclick="@(async () => { Technology(); await ChangeBackground(); } )"> <b>03</b> TECHNOLOGY </a> </li>
             </ul>
         </div>
+        <div></div>
 </div>
 
+@code {
+    public string bgUrl = "/assets/crew/background-crew-desktop.jpg";
+    public string homeDesktopUrl = "/assets/home/background-home-desktop.jpg";
+    public string destDesktopUrl = "/assets/destination/background-destination-desktop.jpg";
+    public string crewDesktopUrl = "/assets/crew/background-crew-desktop.jpg";
+    public string techDesktopUrl = "/assets/technology/background-technology-desktop.jpg";
 
+    async Task ChangeBackground()
+    {
+        await JsRuntime.InvokeVoidAsync(identifier:"backgroundImgChange", bgUrl);
+    }
 
+    public void Home()
+    {
+        bgUrl = homeDesktopUrl;
+    }
+
+    public void Destination()
+    {
+        bgUrl = destDesktopUrl;
+    }
+
+    public void Crew()
+    {
+        bgUrl = crewDesktopUrl;
+    }
+
+    public void Technology()
+    {
+        bgUrl = techDesktopUrl;
+    }
+}

@@ -1,0 +1,71 @@
+﻿/*  GOOGLE FONT  */
+
+/*   
+font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif;
+*/
+
+.planet-body {
+    height: 445px;
+    width: 1046px;
+    margin-left: 230px;
+    display: flex;
+    justify-content: space-between
+}
+
+.planet-message {
+    height: 392px;
+    width: 444px;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+img {
+    height: 445px;
+    width: 445px;
+}
+
+.planet-body h1 {
+    font-size: 100px;
+    margin-bottom: 14px;
+    font-family: 'Bellefair', serif;
+}
+
+.planet-message p:nth-child(2) {
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.distance-travel {
+    display: flex;
+    margin-top: 27px;
+}
+
+.distance-travel h3 {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+}
+
+.distance-travel p {
+    font-family: 'Barlow Condensed', sans-serif;
+    height: 17px;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    margin-bottom: 12px;
+}
+
+.distance-travel div:nth-child(1)  {
+    margin-right: 79px;
+}
+
+.line2 {
+    margin-top: 46px;
+    border-bottom: 1px solid white;
+    opacity: 0.25;
+    height: 1px;
+    width: 444px;
+}
