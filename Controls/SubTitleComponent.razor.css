@@ -1,0 +1,13 @@
+﻿.destination-pick {
+    width: 400px;
+    height: 34px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+}
+
+    .destination-pick span {
+        margin-right: 28px;
+        letter-spacing: 4.72px;
+        opacity: 0.25;
+    }

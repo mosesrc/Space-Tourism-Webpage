@@ -1,0 +1,46 @@
+﻿
+/*  Explore Button  */
+
+.container {
+    position: absolute;
+    left: 911px;
+    top: 405px;
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-btn {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--black);
+    height: 274px;
+    width: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-overlay {
+    position: absolute;
+    background: var(--white);
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    mix-blend-mode: normal;
+    border: none;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.container a:link,
+.container a:visited {
+    text-decoration: none;
+    color: var(--black);
+}
