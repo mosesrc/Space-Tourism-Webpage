@@ -1,0 +1,44 @@
+﻿/*  GOOGLE FONT  */
+
+/*   
+font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif;
+*/
+
+/*  HOME-SPACE-INFO  */
+
+.home-body {
+    height: 42%;
+    width: 75%;
+    height: 382px;
+    width: 1109px;
+    margin: 254px 165px 131px 165px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .home-body h3 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        margin-bottom: 58px;
+    }
+
+    .home-body h1 {
+        font-family: 'Bellefair', serif;
+        font-size: 150px;
+        margin-bottom: 24px;
+    }
+
+.space-message {
+    height: 100%;
+    width: 450px;
+}
+
+    .space-message p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        width: 444px;
+    }

@@ -1,0 +1,38 @@
+﻿.destination-header-nav {
+    height: 132px;
+    width: 951px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 166px;
+    margin-top: 112px;
+}
+
+.destination-nav {
+    height: 34px;
+    width: 285.5px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    align-self: end;
+}
+
+.destination-nav a {
+    display: inline-block;
+    height: 100%;
+}
+
+.destination-nav a:link, .destination-nav a:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.destination-nav a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+    .destination-nav a:active {
+    text-decoration: none;
+    border-bottom: 3px solid var(--white);
+}

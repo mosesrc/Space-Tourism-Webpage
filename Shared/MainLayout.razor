@@ -5,3 +5,21 @@
 <div class="page">
        @Body
 </div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    public string homeBackground = "";
+    public string destinationBackground = "";
+    public string crewBackground = "";
+    public string techBackground = "";
+
+    public void BackgroundChange()
+    {
+        destinationBackground = "/assets/destination/background-destination-desktop.jpg";
+        StateHasChanged();
+    }
+}

@@ -1,7 +1,48 @@
 ﻿@page "/destinations"
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
 
-<PageTitle>DestinationComponent</PageTitle>
+<PageTitle>Destinations</PageTitle>
+
+<NavBar />
+<div class="destination-header-nav">
+
+    <SubTitleComponent MenuItem="01" Title="PICK YOUR DESTINATION" />
+
+    <ul class="destination-nav">
+        <li><a href="#">MOON</a></li>
+        <li><a href="#">MARS</a></li>
+        <li><a href="#">EUROPA</a></li>
+        <li><a href="#">TITAN</a></li>
+    </ul>
+   
+</div>
+<PlanetsComponent />
+
 
 @code {
+
+    public string example = "Are you there";
+
+    #region "Destination Model"
+
+    class DestinationModel
+    {
+        public List<Planet> Planets;
+    }
+
+    class Planet
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Image { get; set; }
+        public string Distance { get; set; }
+        public string Travel { get; set; }
+
+    }
+
+    
+
+    #endregion
 
 }
