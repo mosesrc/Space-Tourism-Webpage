@@ -7,11 +7,12 @@ font-family: 'Bellefair', serif;
 */
 
 .planet-body[b-hyweo7ic62] {
+    position: absolute;
+    left: -601.5px;
     height: 445px;
     width: 1046px;
-    margin-left: 230px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .planet-message[b-hyweo7ic62] {

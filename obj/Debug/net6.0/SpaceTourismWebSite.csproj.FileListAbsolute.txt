@@ -39,3 +39,4 @@ C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\SpaceTourismWebSite.csproj.CopyComplete
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Pages\CrewComponent.razor.rz.scp.css
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\SubTitleComponent.razor.rz.scp.css
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\CrewMemberComponent.razor.rz.scp.css

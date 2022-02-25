@@ -31,8 +31,9 @@ body {
     color: var(--white);
     min-height: 100%;
     min-width: 100%;
-    background: url("/assets/home/background-home-desktop.jpg") no-repeat;
+    background: url("/assets/home/background-home-desktop.jpg") fixed no-repeat;
     display: block;
+    
 }
 
 

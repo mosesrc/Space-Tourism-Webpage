@@ -1,4 +1,7 @@
 ﻿.destination-pick {
+    position: relative;
+    left: 166.5px;
+    top: 112px;
     width: 400px;
     height: 34px;
     font-family: 'Barlow Condensed', sans-serif;
@@ -6,8 +9,8 @@
     letter-spacing: 4.72px;
 }
 
-    .destination-pick span {
-        margin-right: 28px;
-        letter-spacing: 4.72px;
-        opacity: 0.25;
-    }
+.destination-pick span {
+    margin-right: 28px;
+    letter-spacing: 4.72px;
+    opacity: 0.25;
+}

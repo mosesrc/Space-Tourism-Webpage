@@ -1,0 +1,13 @@
+*[b-1mtso0i8tl] {
+    border: 1px solid orange;
+}
+.crew-body[b-1mtso0i8tl] {
+    height: 406px;
+    width: 444px;
+    display: inline-block;
+}
+
+section.crew-body + img[b-1mtso0i8tl] {
+    display: inline-block;
+    margin-right: auto;
+}

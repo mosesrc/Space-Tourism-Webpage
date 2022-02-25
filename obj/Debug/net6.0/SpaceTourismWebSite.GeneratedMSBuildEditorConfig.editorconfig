@@ -19,10 +19,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Controls/CrewMemberComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ3Jld01lbWJlckNvbXBvbmVudC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Pages/TechnologyComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVjaG5vbG9neUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Controls/CrewMemberComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ3Jld01lbWJlckNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1mtso0i8tl
 
 [C:/Users/rynmo/OneDrive/Desktop/MSSA/UnitedTraining/Project3/SpaceTourismWebSite/Controls/ExploreButtonComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcRXhwbG9yZUJ1dHRvbkNvbXBvbmVudC5yYXpvcg==

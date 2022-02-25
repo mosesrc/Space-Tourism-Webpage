@@ -13,5 +13,5 @@
 
 function backgroundImgChange(imageUrl) {
     const body = document.querySelector('body')
-    body.style.background = `url(${imageUrl}) no-repeat center fixed`;
+    body.style.background = `url(${imageUrl}) no-repeat fixed`;
 }

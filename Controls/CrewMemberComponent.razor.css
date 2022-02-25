@@ -1,0 +1,13 @@
+﻿* {
+    border: 1px solid orange;
+}
+.crew-body {
+    height: 406px;
+    width: 444px;
+    display: inline-block;
+}
+
+section.crew-body + img {
+    display: inline-block;
+    margin-right: auto;
+}
