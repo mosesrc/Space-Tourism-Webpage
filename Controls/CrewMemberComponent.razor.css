@@ -2,12 +2,36 @@
     border: 1px solid orange;
 }
 .crew-body {
-    height: 406px;
-    width: 444px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
 }
 
-section.crew-body + img {
-    display: inline-block;
-    margin-right: auto;
+.member-info {
+    margin-top: 174px;
+    margin-right: 81.43px;
+}
+
+.member-info p{
+    width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+.member-info h2 {
+    box-sizing:border-box;
+    font-size: 32px;
+}
+
+.member-info h1 {
+
+    font-size: 56px;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 132px;
 }

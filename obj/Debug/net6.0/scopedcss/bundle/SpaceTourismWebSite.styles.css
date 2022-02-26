@@ -3,14 +3,38 @@
     border: 1px solid orange;
 }
 .crew-body[b-1mtso0i8tl] {
-    height: 406px;
-    width: 444px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
 }
 
-section.crew-body + img[b-1mtso0i8tl] {
-    display: inline-block;
-    margin-right: auto;
+.member-info[b-1mtso0i8tl] {
+    margin-top: 174px;
+    margin-right: 81.43px;
+}
+
+.member-info p[b-1mtso0i8tl]{
+    width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+.member-info h2[b-1mtso0i8tl] {
+    box-sizing:border-box;
+    font-size: 32px;
+}
+
+.member-info h1[b-1mtso0i8tl] {
+
+    font-size: 56px;
+}
+
+.progress-container[b-1mtso0i8tl] {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 132px;
 }
 /* _content/SpaceTourismWebSite/Controls/ExploreButtonComponent.razor.rz.scp.css */
 
@@ -155,12 +179,10 @@ img[b-hyweo7ic62] {
 }
 
 .page-setup[b-0mfkhqbax9] {
+    margin-top: 200px;
     width: 100%;
 }
 
-.title[b-0mfkhqbax9] {
-    position: absolute;
-}
 /* _content/SpaceTourismWebSite/Pages/DestinationComponent.razor.rz.scp.css */
 .mini-nav-body[b-ybxqefc3pk] {
     position: relative;
