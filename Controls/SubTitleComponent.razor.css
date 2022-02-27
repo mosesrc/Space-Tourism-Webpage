@@ -1,4 +1,4 @@
-﻿.destination-pick {
+﻿.title-info {
     position: relative;
     left: 166.5px;
     top: 112px;
@@ -9,7 +9,7 @@
     letter-spacing: 4.72px;
 }
 
-.destination-pick span {
+.title-info span {
     margin-right: 28px;
     letter-spacing: 4.72px;
     opacity: 0.25;

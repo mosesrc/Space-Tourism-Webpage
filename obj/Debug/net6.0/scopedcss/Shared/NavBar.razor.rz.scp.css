@@ -52,11 +52,14 @@
             border-bottom: 3px solid rgba(255, 255, 255, 0.4);
         }
 
-        .NavRect a:active[b-86oanrukko] {
+        .NavRect a:active[b-86oanrukko]{
             text-decoration: none;
             border-bottom: 3px solid var(--white);
         }
 
+.focus[b-86oanrukko] {
+    border-bottom: 3px solid var(--white);
+}
 
 .line[b-86oanrukko] {
     position: absolute;

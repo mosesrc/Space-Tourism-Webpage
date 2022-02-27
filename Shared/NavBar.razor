@@ -5,7 +5,7 @@
         <div class="line"></div>
         <div class="NavRect">
             <ul>
-                <li> <a href="/" @onclick="@(async () => { Home(); await ChangeBackground(); } )"  > <b>00</b> HOME </a> </li>
+                <li> <a class="focus" href="/" @onclick="@(async () => { Home(); await ChangeBackground(); } )"  > <b>00</b> HOME </a> </li>
                 <li> <a href="destinations" @onclick="@(async () => { Destination(); await ChangeBackground(); } )"> <b>01</b> DESTINATION </a> </li>
                 <li> <a href="crew-members" @onclick="@(async () => { Crew(); await ChangeBackground(); } )"> <b>02</b> CREW </a> </li>
                 <li> <a href="technologies" @onclick="@(async () => { Technology(); await ChangeBackground(); } )"> <b>03</b> TECHNOLOGY </a> </li>
@@ -22,9 +22,11 @@
     public string techDesktopUrl = "/assets/technology/background-technology-desktop.jpg";
 
     async Task ChangeBackground()
-    {
+    {  
         await JsRuntime.InvokeVoidAsync(identifier:"backgroundImgChange", bgUrl);
     }
+
+   
 
     public void Home()
     {

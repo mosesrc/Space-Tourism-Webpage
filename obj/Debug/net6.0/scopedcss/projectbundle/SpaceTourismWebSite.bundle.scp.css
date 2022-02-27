@@ -196,7 +196,7 @@ img[b-hyweo7ic62] {
     width: 444px;
 }
 /* _content/SpaceTourismWebSite/Controls/SubTitleComponent.razor.rz.scp.css */
-.destination-pick[b-0yvhtd3do5] {
+.title-info[b-0yvhtd3do5] {
     position: relative;
     left: 166.5px;
     top: 112px;
@@ -207,7 +207,7 @@ img[b-hyweo7ic62] {
     letter-spacing: 4.72px;
 }
 
-.destination-pick span[b-0yvhtd3do5] {
+.title-info span[b-0yvhtd3do5] {
     margin-right: 28px;
     letter-spacing: 4.72px;
     opacity: 0.25;
@@ -304,6 +304,9 @@ font-family: 'Bellefair', serif;
         line-height: 32px;
         width: 444px;
     }
+/* _content/SpaceTourismWebSite/Pages/TechnologyComponent.razor.rz.scp.css */
+body[b-wgbk813lc4] {
+}
 /* _content/SpaceTourismWebSite/Shared/MainLayout.razor.rz.scp.css */
 /* _content/SpaceTourismWebSite/Shared/NavBar.razor.rz.scp.css */
 /*  NavBar  */
@@ -360,11 +363,14 @@ font-family: 'Bellefair', serif;
             border-bottom: 3px solid rgba(255, 255, 255, 0.4);
         }
 
-        .NavRect a:active[b-86oanrukko] {
+        .NavRect a:active[b-86oanrukko]{
             text-decoration: none;
             border-bottom: 3px solid var(--white);
         }
 
+.focus[b-86oanrukko] {
+    border-bottom: 3px solid var(--white);
+}
 
 .line[b-86oanrukko] {
     position: absolute;
