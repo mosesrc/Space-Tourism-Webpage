@@ -1,2 +1,9 @@
-body[b-0mfkhqbax9] {
+*[b-0mfkhqbax9] {
+    border: 1px solid orange;
 }
+
+.page-setup[b-0mfkhqbax9] {
+    margin-top: 200px;
+    width: 100%;
+}
+

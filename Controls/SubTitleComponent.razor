@@ -1,4 +1,4 @@
-﻿<h2 class="destination-pick"><span>@MenuItem</span>@Title</h2>
+﻿<h2 class="@CssClass"><span>@MenuItem</span>@Title</h2>
 
 @code {
     [Parameter]
@@ -6,4 +6,7 @@
 
     [Parameter]
     public string Title { get; set; }
+
+    [Parameter]
+    public virtual string CssClass { get; set; }
 }

@@ -1,2 +1,9 @@
-﻿body {
+﻿* {
+    border: 1px solid orange;
 }
+
+.page-setup {
+    margin-top: 200px;
+    width: 100%;
+}
+

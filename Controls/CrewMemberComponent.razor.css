@@ -1,0 +1,76 @@
+﻿/*  GOOGLE FONT  */
+
+/*   
+font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif;
+*/
+
+
+.crew-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.member-info {
+    position: absolute;
+    left: 167px;
+    margin-top: 174px;
+}
+
+.member-info + img {
+    position: absolute;
+    left: 770.93px;
+}
+
+.member-info h2 {
+    font-family: 'Bellefair', serif;
+    box-sizing: border-box;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 15px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.member-info h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 34px;
+}
+
+.member-info p {
+    font-family: 'Barlow', sans-serif;
+    color: var(--light-blue);
+    width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 113px;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 132px;
+}
+
+.circle {
+    background-color: var(--white);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 0.17;
+    mix-blend-mode: normal;
+    transition: 0.4s ease;
+}
+
+.active {
+    opacity: 1;
+}
