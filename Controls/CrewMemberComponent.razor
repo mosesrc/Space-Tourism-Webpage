@@ -1,4 +1,6 @@
-﻿<section class="crew-body">
+﻿@inject IJSRuntime JsRuntime
+
+<section class="crew-body">
 
     <div class="member-info">
 
@@ -11,15 +13,18 @@
         </p>
 
         <div class="progress-container">
-            <div class="circle active"><a>1</a></div>
-            <div class="circle"><a>2</a></div>
-            <div class="circle"><a>3</a></div>
-            <div class="circle"><a>4</a></div>
+            <a @onclick="ActiveIndicator" class="circle active"></a>
+            <a @onclick="ActiveIndicator"  class="circle"></a>
+            <a @onclick="ActiveIndicator"  class="circle"></a>
+            <a @onclick="ActiveIndicator"  class="circle"></a>
         </div>
     </div>
     <img src="assets/crew/image-douglas-hurley.png" alt="Commander" />
 </section>
 
 @code {
-
+    async Task ActiveIndicator()
+    {
+        await JsRuntime.InvokeVoidAsync(identifier: "crewIndicators");
+    }
 }
