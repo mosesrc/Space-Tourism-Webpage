@@ -41,3 +41,5 @@ C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\SubTitleComponent.razor.rz.scp.css
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\CrewMemberComponent.razor.rz.scp.css
 C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Pages\TechnologyComponent.razor.rz.scp.css
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\obj\Debug\net6.0\scopedcss\Controls\EquipmentComponent.razor.rz.scp.css
+C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\bin\Debug\net6.0\BlazorAnimate.dll

@@ -1,0 +1,34 @@
+﻿@inject IJSRuntime JsRuntime
+
+
+
+    <section class="tech-body">
+
+        <div class="launch-container">
+            <a class="circle active" @onclick="moveIndicator">1</a>
+            <a class="circle" @onclick="moveIndicator">2</a>
+            <a class="circle" @onclick="moveIndicator">3</a>
+        </div>
+
+        <div class="tech-message">
+
+            <h5>The terminology...</h5>
+            <h1>Launch vehicle</h1>
+            <p>
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+                it's quite an awe-inspiring sight on the launch pad!
+            </p>
+        </div>
+
+        <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="Spaceship" />
+    </section>
+
+
+@code {
+    async Task moveIndicator()
+    {
+        await JsRuntime.InvokeVoidAsync(identifier: "crewIndicators");
+    }
+}

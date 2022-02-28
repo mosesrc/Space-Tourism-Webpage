@@ -52,14 +52,10 @@
             border-bottom: 3px solid rgba(255, 255, 255, 0.4);
         }
 
-        .NavRect a:active{
+        .NavRect a:focus:active {
             text-decoration: none;
             border-bottom: 3px solid var(--white);
         }
-
-.focus {
-    border-bottom: 3px solid var(--white);
-}
 
 .line {
     position: absolute;

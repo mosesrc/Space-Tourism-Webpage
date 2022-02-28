@@ -9,6 +9,7 @@ font-family: 'Bellefair', serif;
 /*  HOME-SPACE-INFO  */
 
 .home-body[b-nem8b9r9y9] {
+    position: relative;
     height: 42%;
     width: 75%;
     height: 382px;
@@ -36,9 +37,11 @@ font-family: 'Bellefair', serif;
     width: 450px;
 }
 
-    .space-message p[b-nem8b9r9y9] {
-        font-family: 'Barlow', sans-serif;
-        font-size: 18px;
-        line-height: 32px;
-        width: 444px;
-    }
+.space-message p[b-nem8b9r9y9] {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    width: 444px;
+}
+
+

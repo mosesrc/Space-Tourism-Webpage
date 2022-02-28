@@ -1,31 +1,17 @@
 ﻿@page "/technologies"
+@using BlazorAnimate;
 
 <PageTitle>TechnologyComponent</PageTitle>
-
 <NavBar />
 
-<SubTitleComponent CssClass="title-info" MenuItem="03" Title="SPACE LAUNCH 101" />
+<Animate Animation="Animations.SlideRight" Duration="TimeSpan.FromSeconds(1)" Delay="TimeSpan.FromSeconds(0.5)">
 
-<section class="tech-body">
+    <SubTitleComponent CssClass="title-info" MenuItem="03" Title="SPACE LAUNCH 101" />
 
-<div class="launch-container">
-    <a>1</a>
-    <a>2</a>
-    <a>3</a>
-</div>
+    <EquipmentComponent />
 
-<h5>The terminology...</h5>
-<h1>Launch vehicle</h1>
-<p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!</p>
+</Animate>
 
-<img src="~/assets/technology/image-launch-vehicle-portrait.jpg" alt="Spaceship" />
-</section>
-  
-
-  
 @code {
 
 }

@@ -1,14 +1,17 @@
 ﻿@page "/crew-members"
+@using BlazorAnimate;
 
 <PageTitle>CrewComponent</PageTitle>
 
 <NavBar />
 
-<SubTitleComponent CssClass="title-info" MenuItem="02" Title="MEET YOUR CREW" />
+<Animate Animation="Animations.SlideRight" Duration="TimeSpan.FromSeconds(1)" Delay="TimeSpan.FromSeconds(0.5)">
 
-<CrewMemberComponent />
+    <SubTitleComponent CssClass="title-info" MenuItem="02" Title="MEET YOUR CREW" />
 
+    <CrewMemberComponent />
 
+</Animate>
 
 @code {
 

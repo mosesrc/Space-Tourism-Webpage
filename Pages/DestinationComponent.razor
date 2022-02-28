@@ -1,25 +1,27 @@
 ﻿@page "/destinations"
 @using System.Text.Json;
 @using System.Text.Json.Serialization;
+@using BlazorAnimate;
 
 <PageTitle>Destinations</PageTitle>
 
 <NavBar />
 
+<Animate Animation="Animations.SlideRight" Duration="TimeSpan.FromSeconds(1)" Delay="TimeSpan.FromSeconds(0.5)">
 
-<SubTitleComponent CssClass="title-info" MenuItem="01" Title="PICK YOUR DESTINATION" />
+    <SubTitleComponent CssClass="title-info" MenuItem="01" Title="PICK YOUR DESTINATION" />
 
-<div class="mini-nav-body">
-    <ul class="destination-nav">
-        <li><a href="#">MOON</a></li>
-        <li><a href="#">MARS</a></li>
-        <li><a href="#">EUROPA</a></li>
-        <li><a href="#">TITAN</a></li>
-    </ul>
-    <PlanetsComponent />
-</div>
+    <div class="mini-nav-body">
+        <ul class="destination-nav">
+            <li><a href="#">MOON</a></li>
+            <li><a href="#">MARS</a></li>
+            <li><a href="#">EUROPA</a></li>
+            <li><a href="#">TITAN</a></li>
+        </ul>
+        <PlanetsComponent />
+    </div>
 
-
+</Animate>
 
 
 @code {

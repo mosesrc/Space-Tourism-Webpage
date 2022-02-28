@@ -1,4 +1,4 @@
-﻿focusonLink();
+﻿
 
 // NavBar
 function btnOverlay() {
@@ -58,3 +58,4 @@ function check(list, str) {
         }
     })
 }
+
