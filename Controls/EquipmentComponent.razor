@@ -1,34 +1,47 @@
 ﻿@inject IJSRuntime JsRuntime
+@using Newtonsoft.Json;
+@using BlazorAnimate;
 
 
 
     <section class="tech-body">
 
         <div class="launch-container">
-            <a class="circle active" @onclick="moveIndicator">1</a>
-            <a class="circle" @onclick="moveIndicator">2</a>
-            <a class="circle" @onclick="moveIndicator">3</a>
+            <a class="circle active" @onclick="@(() => MoveIndicator(0))">1</a>
+            <a class="circle" @onclick="@(() => MoveIndicator(1))">2</a>
+            <a class="circle" @onclick="@(() => MoveIndicator(2))">3</a>
         </div>
 
         <div class="tech-message">
 
             <h5>The terminology...</h5>
-            <h1>Launch vehicle</h1>
+            <h1>@tech.technology[@Index].name.ToUpper()</h1>
             <p>
-                A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
-                payload from Earth's surface to space, usually to Earth orbit or beyond. Our
-                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
-                it's quite an awe-inspiring sight on the launch pad!
+              @tech.technology[@Index].description
             </p>
         </div>
 
-        <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="Spaceship" />
+        <img src="@tech.technology[@Index].images.portrait" alt="Spaceship" />
     </section>
 
 
 @code {
-    async Task moveIndicator()
+    async Task MoveIndicator(int num)
     {
         await JsRuntime.InvokeVoidAsync(identifier: "crewIndicators");
+        Index = num;
     }
+
+    #region Technology Model
+ 
+    public int Index { get; set; }
+
+
+    public static string DestinationData = @"C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\Data\technologies.json";
+    static string jsonFile = File.ReadAllText(DestinationData);
+
+
+    Equipment.Rootobject tech = JsonConvert.DeserializeObject<Equipment.Rootobject>(jsonFile);
+
+    #endregion
 }

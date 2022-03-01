@@ -13,24 +13,24 @@
         </p>
 
         <div class="progress-container">
-            <div @onclick="async () => { await ActiveIndicator();  Index = 0; }" class="circle active"></div>
-            <div @onclick="async () => { await ActiveIndicator();  Index = 1; }"  class="circle"></div>
-            <div @onclick="async () => { await ActiveIndicator();  Index = 2; }"  class="circle"></div>
-            <div @onclick="async () => { await ActiveIndicator();  Index = 3; }"  class="circle"></div>
+            <div @onclick="@(() => ActiveIndicator(0))" class="circle active"></div>
+            <div @onclick="@(() => ActiveIndicator(1))"  class="circle"></div>
+            <div @onclick="@(() => ActiveIndicator(2))"  class="circle"></div>
+            <div @onclick="@(() => ActiveIndicator(3))"  class="circle"></div>
         </div>
     </div>
     <img src="@member.crew[@Index].images.png" alt="Commander" />
 </section>
 
 @code {
-    async Task ActiveIndicator()
+    async Task ActiveIndicator(int num)
     {
         await JsRuntime.InvokeVoidAsync(identifier: "crewIndicators");
+        Index = num;
     }
 
     #region Crew Model
  
-    [Parameter]
     public int Index { get; set; }
 
 
