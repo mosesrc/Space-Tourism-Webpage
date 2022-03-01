@@ -1,34 +1,35 @@
 ﻿@using Newtonsoft.Json;
 @using SpaceTourismWebSite.Model;
+@using BlazorAnimate;
 
 
-<section class="planet-body">
-    <img src="./assets/destination/image-moon.png" />
-    <div class="planet-message">
-        <h1>@planet.destinations[0].name.ToUpper()</h1>
-        <p>
-            See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-            regain perspective and come back refreshed. While you’re there, take in some history
-            by visiting the Luna 2 and Apollo 11 landing sites.
-        </p>
 
-        <div class="line2"></div>
+    <section class="planet-body">
+        <img src=@planet.destinations[@Index].images.png />
+        <div class="planet-message">
+            <h1>@planet.destinations[@Index].name.ToUpper()</h1>
+            <p>
+                @planet.destinations[@Index].description
+            </p>
 
-        <div class="distance-travel">
-            <div>
+            <div class="line2"></div>
 
-                <p>AVG. DISTANCE</p>
-                <h3>384,400 KM</h3>
-            </div>
+            <div class="distance-travel">
+                <div>
 
-            <div>
+                    <p>AVG. DISTANCE</p>
+                    <h3>@planet.destinations[@Index].distance.ToUpper()</h3>
+                </div>
 
-                <p>EST. TRAVEL TIME</p>
-                <h3>3 DAYS</h3>
+                <div>
+
+                    <p>EST. TRAVEL TIME</p>
+                    <h3>@planet.destinations[@Index].travel.ToUpper()</h3>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 
 
 
@@ -36,14 +37,17 @@
 
 @code {
 
-    #region "Destination Model"
+    [Parameter]
+    public int Index { get; set; }
+
+    #region "Planet Model"
 
     public static string DestinationData = @"C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\Data\destinations.json";
     static string jsonFile = File.ReadAllText(DestinationData);
 
 
     Planet.Rootobject planet = JsonConvert.DeserializeObject<Planet.Rootobject>(jsonFile);
-  
+
     #endregion
 
 

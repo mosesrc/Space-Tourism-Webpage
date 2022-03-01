@@ -1,6 +1,4 @@
 ﻿@page "/destinations"
-@using System.Text.Json;
-@using System.Text.Json.Serialization;
 @using BlazorAnimate;
 
 <PageTitle>Destinations</PageTitle>
@@ -13,19 +11,20 @@
 
     <div class="mini-nav-body">
         <ul class="destination-nav">
-            <li><a href="#">MOON</a></li>
-            <li><a href="#">MARS</a></li>
-            <li><a href="#">EUROPA</a></li>
-            <li><a href="#">TITAN</a></li>
+            <li><a @onclick="() => numPos = 0">MOON</a></li>
+            <li><a @onclick="() => numPos = 1">MARS</a></li>
+            <li><a @onclick="() => numPos = 2">EUROPA</a></li>
+            <li><a @onclick="() => numPos = 3">TITAN</a></li>
         </ul>
-        <PlanetsComponent />
+        <Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(0.8)">
+            <PlanetsComponent Index=numPos />
+        </Animate>
     </div>
 
 </Animate>
 
 
 @code {
-
-    public string example = "Are you there";
+    public int numPos;
 
 }
