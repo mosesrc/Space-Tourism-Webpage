@@ -20,6 +20,11 @@ font-family: 'Bellefair', serif;
     height: 304px;
 }
 
+    .launch-container a:hover[b-zxajnvz1m7] {
+        border: 1px solid var(--white);
+        transition: 0.4s ease;
+    }
+
 .circle[b-zxajnvz1m7] {
     color: var(--white);
     font-family: 'Bellefair', serif;

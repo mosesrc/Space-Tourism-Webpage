@@ -57,6 +57,15 @@ font-family: 'Bellefair', serif;
     width: 132px;
 }
 
+.progress-container a:hover {
+    opacity: 0.5;
+}
+
+.progress-container a:active {
+    opacity: 1
+}
+   
+
 .circle {
     background-color: var(--white);
     border-radius: 50%;

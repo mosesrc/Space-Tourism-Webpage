@@ -1,7 +1,11 @@
-﻿<section class="planet-body">
+﻿@using Newtonsoft.Json;
+@using SpaceTourismWebSite.Model;
+
+
+<section class="planet-body">
     <img src="./assets/destination/image-moon.png" />
     <div class="planet-message">
-        <h1>MOON</h1>
+        <h1>@planet.destinations[0].name.ToUpper()</h1>
         <p>
             See our planet as you’ve never seen it before. A perfect relaxing trip away to help
             regain perspective and come back refreshed. While you’re there, take in some history
@@ -28,6 +32,20 @@
 </section>
 
 
+
+
+
 @code {
+
+    #region "Destination Model"
+
+    public static string DestinationData = @"C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\Data\destinations.json";
+    static string jsonFile = File.ReadAllText(DestinationData);
+
+
+    Planet.Rootobject planet = JsonConvert.DeserializeObject<Planet.Rootobject>(jsonFile);
+  
+    #endregion
+
 
 }

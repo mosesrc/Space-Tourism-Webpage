@@ -58,6 +58,15 @@ font-family: 'Bellefair', serif;
     width: 132px;
 }
 
+.progress-container a:hover[b-1mtso0i8tl] {
+    opacity: 0.5;
+}
+
+.progress-container a:active[b-1mtso0i8tl] {
+    opacity: 1
+}
+   
+
 .circle[b-1mtso0i8tl] {
     background-color: var(--white);
     border-radius: 50%;
@@ -97,6 +106,11 @@ font-family: 'Bellefair', serif;
     margin-left: 166.5px;
     height: 304px;
 }
+
+    .launch-container a:hover[b-zxajnvz1m7] {
+        border: 1px solid var(--white);
+        transition: 0.4s ease;
+    }
 
 .circle[b-zxajnvz1m7] {
     color: var(--white);
@@ -447,10 +461,14 @@ font-family: 'Bellefair', serif;
             border-bottom: 3px solid rgba(255, 255, 255, 0.4);
         }
 
-        .NavRect a:focus:active[b-86oanrukko] {
+        .NavRect a:active[b-86oanrukko] {
             text-decoration: none;
             border-bottom: 3px solid var(--white);
         }
+
+.focus[b-86oanrukko] {
+    border-bottom: 3px solid var(--white);
+}
 
 .line[b-86oanrukko] {
     position: absolute;

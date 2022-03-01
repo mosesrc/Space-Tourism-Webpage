@@ -1,6 +1,4 @@
-﻿
-
-// NavBar
+﻿// NavBar
 function btnOverlay() {
     const btn = document.querySelector('.explore-btn h5 a');
     let overlay = document.querySelector('.circle-overlay');
@@ -16,26 +14,29 @@ function btnOverlay() {
 
 function backgroundImgChange(imageUrl) {
     const body = document.querySelector('body');
+
     body.style.background = `url(${imageUrl}) no-repeat fixed`;
-  /*  focusOnLink();*/
 }
 
-//function focusOnLink() {
-//    const navLinks = document.querySelectorAll('.NavRect a');
-//    let path = window.location.href;
-//    check(navLinks, 'focus');
+function focusOnLink() {
+    const navLinks = document.querySelectorAll('.NavRect a');
+    let path = window.location.href;
 
-//    navLinks.forEach(item => {
-//        item.addEventListener('click', () => {
-//            if (path === item.href) {
-//                item.classList.add('focus');
-//            } else {
-//                item.classList.remove('focus');
-//            }
-//        })
-//    });
-    
-//}
+    for (i = 0; i < navLinks.length; i++) {
+        if (navLinks[i].href === path)
+            navLinks[i].className = 'focus';
+        console.log(navLinks[i].classList)
+    }
+
+
+    // mark link active
+
+    //navLinks.forEach(item => {
+    //    if (path === item.href)
+    //        item.classList.toggle('focus');
+    //});
+
+}
 
 
 // Crew Page in regards of Indicators
