@@ -1,25 +1,25 @@
 ﻿@inject IJSRuntime JsRuntime
+@using Newtonsoft.Json;
+@using BlazorAnimate;
 
 <section class="crew-body">
 
     <div class="member-info">
 
-        <h2>COMMANDER</h2>
-        <h1>DOUGLAS HURLEY</h1>
+        <h2>@member.crew[@Index].role.ToUpper()</h2>
+        <h1>@member.crew[@Index].name.ToUpper()</h1>
         <p>
-            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-            and former NASA astronaut. He launched into space for the third time as
-            commander of Crew Dragon Demo-2.
+            @member.crew[@Index].bio
         </p>
 
         <div class="progress-container">
-            <a @onclick="ActiveIndicator" class="circle active"></a>
-            <a @onclick="ActiveIndicator"  class="circle"></a>
-            <a @onclick="ActiveIndicator"  class="circle"></a>
-            <a @onclick="ActiveIndicator"  class="circle"></a>
+            <div @onclick="async () => { await ActiveIndicator();  Index = 0; }" class="circle active"></div>
+            <div @onclick="async () => { await ActiveIndicator();  Index = 1; }"  class="circle"></div>
+            <div @onclick="async () => { await ActiveIndicator();  Index = 2; }"  class="circle"></div>
+            <div @onclick="async () => { await ActiveIndicator();  Index = 3; }"  class="circle"></div>
         </div>
     </div>
-    <img src="assets/crew/image-douglas-hurley.png" alt="Commander" />
+    <img src="@member.crew[@Index].images.png" alt="Commander" />
 </section>
 
 @code {
@@ -27,4 +27,18 @@
     {
         await JsRuntime.InvokeVoidAsync(identifier: "crewIndicators");
     }
+
+    #region Crew Model
+ 
+    [Parameter]
+    public int Index { get; set; }
+
+
+    public static string DestinationData = @"C:\Users\rynmo\OneDrive\Desktop\MSSA\UnitedTraining\Project3\SpaceTourismWebSite\Data\crew-members.json";
+    static string jsonFile = File.ReadAllText(DestinationData);
+
+
+    CrewMember.Rootobject member = JsonConvert.DeserializeObject<CrewMember.Rootobject>(jsonFile);
+
+    #endregion
 }
