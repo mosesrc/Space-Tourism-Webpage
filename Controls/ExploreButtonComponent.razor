@@ -3,7 +3,7 @@
 <div class="container">
 
     <div class="explore-btn">
-        <h5><a @onmouseover="ShowOverlay" href="destinations">EXPLORE</a></h5>
+        <h5><a @onmouseover="ShowOverlay" @onclick="ChangeBackground" href="destinations">EXPLORE</a></h5>
     </div>
 
 
@@ -13,8 +13,16 @@
 
 @code {
 
+     public string destDesktopUrl = "/assets/destination/background-destination-desktop.jpg";
+
     async Task ShowOverlay()
     {
         await JsRuntime.InvokeVoidAsync(identifier:"btnOverlay");
     }
+
+     async Task ChangeBackground()
+    {
+        await JsRuntime.InvokeVoidAsync(identifier: "backgroundImgChange", destDesktopUrl);
+    }
+
 }
