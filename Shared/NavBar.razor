@@ -1,16 +1,18 @@
 ﻿@inject IJSRuntime JsRuntime
+@using BlazorAnimate;
 
 <div class="NavBar">
     <div><img class="logo" src="assets/shared/logo.svg"></div>
     <div class="line"></div>
-    <div class="NavRect">
+    <div class="NavRect" data-visible="false">
         <ul>
-            <li> <a href="/" @onclick="@(async () => { Home(); await ChangeBackground(); } )"> <b>00</b> HOME </a> </li>
-            <li> <a href="destinations" @onclick="@(async () => { Destination(); await ChangeBackground(); } )"> <b>01</b> DESTINATION </a> </li>
-            <li> <a href="crew-members" @onclick="@(async () => { Crew(); await ChangeBackground(); } )"> <b>02</b> CREW </a> </li>
-            <li> <a href="technologies" @onclick="@(async () => { Technology(); await ChangeBackground(); } )"> <b>03</b> TECHNOLOGY </a> </li>
+            <li> <a href="/" @onclick="@(async () => { Home(); await ChangeBackground(); } )"> <span class="bold">00</span> <span>HOME</span> </a> </li>
+            <li> <a href="destinations" @onclick="@(async () => { Destination(); await ChangeBackground(); } )"> <span class="bold">01</span> <span>DESTINATION</span> </a> </li>
+            <li> <a href="crew-members" @onclick="@(async () => { Crew(); await ChangeBackground(); } )"> <span class="bold">02</span> <span>CREW</span> </a> </li>
+            <li> <a href="technologies" @onclick="@(async () => { Technology(); await ChangeBackground(); } )"> <span class="bold">03</span> <span>TECHNOLOGY</span> </a> </li>
         </ul>
     </div>
+    <button class="toggle-nav-icon" @onclick="ToggleNav" aria-controls="primary-navigation" aria-expanded="false" />
 </div>
 
 @code {
@@ -25,6 +27,11 @@
         await JsRuntime.InvokeVoidAsync(identifier: "backgroundImgChange", bgUrl);
     }
 
+
+    async Task ToggleNav()
+    {
+        await JsRuntime.InvokeVoidAsync(identifier: "toggleNav", bgUrl);
+    }
 
 
     public void Home()

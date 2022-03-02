@@ -1,46 +1,42 @@
 ﻿/*  NavBar  */
 
 .NavBar {
+    position: relative;
     margin: 37px 0 0 auto;
-    height: 96px;
-    width: 1385px;
+    min-height: 96px;
+    max-width: 96%;
     letter-spacing: 2.7px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
 }
 
 .NavRect {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81px);
-    height: 96px;
-    width: 830px;
+    min-height: inherit;
+    width: 60%;
     padding: 0;
     display: flex;
-    position: absolute;
-    left: 610px;
-    top: 37px;
-    font-family: 'Barlow Condensed', sans-serif;
 }
 
     .NavRect ul {
+        list-style: none;
         width: 80%;
         margin-left: 30px;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         margin-left: 57px;
     }
 
-        .NavRect ul li {
-            display: flex;
-        }
-
     .NavRect a {
         display: inline-block;
-        position: relative;
-        height: 55%;
-        top: 42px;
-        font-size: 16px;
+        padding: 38px 0;
         text-decoration: none;
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
     }
 
 
@@ -49,6 +45,7 @@
         }
 
         .NavRect a:hover {
+            padding: 38px 0;
             border-bottom: 3px solid rgba(255, 255, 255, 0.4);
         }
 
@@ -57,23 +54,152 @@
             border-bottom: 3px solid var(--white);
         }
 
+a[href="/"] .bold {
+    margin-right: 0.7rem;
+}
+
+a[href="destinations"] .bold {
+    margin-right: 14px;
+}
+
+a[href="crew-members"] .bold {
+    margin-right: 12px;
+}
+
+a[href="technologies"] .bold {
+    margin-right: 12px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 .focus {
     border-bottom: 3px solid var(--white);
 }
 
 .line {
-    position: absolute;
+    position: relative;
+    left: 3em;
     border-bottom: 1px solid white;
     opacity: 0.25;
     height: 1px;
-    width: 473px;
-    left: 165px;
-    top: 85px;
+    width: 33%;
     z-index: 1;
 }
 
 .logo {
-    height: 48px;
-    width: 48px;
+    height: 3em;
+    width: 3em;
     align-self: center;
+}
+
+.toggle-nav-icon {
+    display: none;
+}
+
+/*Tablet Size*/
+
+@media (max-width: 48rem) {
+    .line {
+        display: none;
+    }
+
+    .NavBar {
+        margin: 0 0 0 39px;
+        max-width: 45rem;
+        font-size: 0.8em;
+    }
+
+    .NavRect {
+        max-width: 28rem;
+    }
+
+        .NavRect ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: 0;
+        }
+
+        .NavRect .bold {
+            display: none;
+        }
+}
+
+@media (max-width: 37rem) {
+    .NavBar {
+    }
+
+    .NavRect {
+        position: fixed;
+        inset: 0 0 0 32%;
+        width: 68%;
+        border: 2px solid orange;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+        .NavRect[data-visible="true"] {
+            transform: translateX(0);
+        }
+
+        .NavRect ul {
+            position: fixed;
+            margin: 7rem 6rem 24rem 2rem;
+            height: 11rem;
+            width: 50%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 1rem;
+        }
+
+        .NavRect li {
+            width: 100%;
+        }
+
+        .NavRect a {
+            padding: 0;
+            border: none;
+        }
+
+        .NavRect a:hover {
+            padding: 0;
+            border: none;
+        }
+
+        .NavRect .bold {
+            display: contents;
+        }
+
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .toggle-nav-icon[aria-expanded="true"] {
+        background-image: url("/assets/shared/icon-close.svg");
+        /*position: relative;
+        
+        top: 2rem;
+        height: 19px;
+        width: 19px;
+        margin: 0;
+        display: unset !important;*/
+    }
+
+    .toggle-nav-icon {
+        position: absolute;
+        background-image: url("/assets/shared/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        left: 88%;
+        display: block;
+        z-index: 1;
+    }
 }

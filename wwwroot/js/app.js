@@ -57,6 +57,20 @@ function check(list, str) {
         if (item.classList.contains(str)) {
             item.classList.remove(str);
         }
-    })
+    });
 }
 
+function toggleNav() {
+    const navigation = document.querySelector('.NavRect');
+    const navToggle = document.querySelector('.toggle-nav-icon');
+    const visibility = navigation.getAttribute('data-visible');
+
+        if (visibility === "false") {
+            navigation.setAttribute('data-visible', true);
+            navToggle.setAttribute('aria-expanded', true)
+        } else if (visibility === "true") {
+            navigation.setAttribute('data-visible', false);
+            navToggle.setAttribute('aria-expanded', false)
+            
+        }
+}
