@@ -13,9 +13,13 @@ function btnOverlay() {
 }
 
 function backgroundImgChange(imageUrl) {
-    const body = document.querySelector('body');
+    const html = document.querySelector('html');
+    html.style.backgroundImage = `url(${imageUrl})`;
+}
 
-    body.style.background = `url(${imageUrl}) no-repeat fixed`;
+function viewportWidth() {
+    const html = document.querySelector('html');
+    return html.offsetWidth;
 }
 
 function focusOnLink() {

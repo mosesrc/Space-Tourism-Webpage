@@ -8,6 +8,10 @@ font-family: 'Bellefair', serif;
 
 /*  HOME-SPACE-INFO  */
 
+html[b-nem8b9r9y9] {
+    background-image: url("/assets/technology/background-technology-desktop.jpg")
+}
+
 .home-body[b-nem8b9r9y9] {
     position: relative;
     height: 42%;
@@ -44,4 +48,8 @@ font-family: 'Bellefair', serif;
     width: 444px;
 }
 
-
+@media (max-width: 48rem) {
+    html[b-nem8b9r9y9] {
+        background-image: url("/wwwroot/assets/home/background-home-tablet.jpg")
+    }
+}

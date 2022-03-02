@@ -16,41 +16,40 @@
 </div>
 
 @code {
-    public string bgUrl = "/assets/crew/background-crew-desktop.jpg";
-    public string homeDesktopUrl = "/assets/home/background-home-desktop.jpg";
-    public string destDesktopUrl = "/assets/destination/background-destination-desktop.jpg";
-    public string crewDesktopUrl = "/assets/crew/background-crew-desktop.jpg";
-    public string techDesktopUrl = "/assets/technology/background-technology-desktop.jpg";
+    public string bgUrl = string.Empty;
+    Background htmlImg = new Background();
+    private int screenSize;
 
     async Task ChangeBackground()
     {
-        await JsRuntime.InvokeVoidAsync(identifier: "backgroundImgChange", bgUrl);
+       screenSize = await JsRuntime.InvokeAsync<int>(identifier: "viewportWidth");
+       await JsRuntime.InvokeVoidAsync(identifier: "backgroundImgChange", bgUrl);
     }
 
 
     async Task ToggleNav()
     {
-        await JsRuntime.InvokeVoidAsync(identifier: "toggleNav", bgUrl);
+        await JsRuntime.InvokeVoidAsync(identifier: "toggleNav");
     }
 
 
     public void Home()
     {
-        bgUrl = homeDesktopUrl;
+        bgUrl = htmlImg.CheckWidth(screenSize, "home");
     }
 
     public void Destination()
     {
-        bgUrl = destDesktopUrl;
+        bgUrl = htmlImg.CheckWidth(screenSize, "destination");
     }
 
     public void Crew()
     {
-        bgUrl = crewDesktopUrl;
+        bgUrl = htmlImg.CheckWidth(screenSize, "crew");
     }
 
     public void Technology()
     {
-        bgUrl = techDesktopUrl;
+        bgUrl = htmlImg.CheckWidth(screenSize, "technology");
     }
 }

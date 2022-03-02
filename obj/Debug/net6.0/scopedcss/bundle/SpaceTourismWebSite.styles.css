@@ -310,10 +310,6 @@ img[b-hyweo7ic62] {
     opacity: 0.25;
 }
 /* _content/SpaceTourismWebSite/Pages/CrewComponent.razor.rz.scp.css */
-*[b-0mfkhqbax9] {
-    border: 1px solid orange;
-}
-
 .page-setup[b-0mfkhqbax9] {
     margin-top: 200px;
     width: 100%;
@@ -367,6 +363,10 @@ font-family: 'Bellefair', serif;
 
 /*  HOME-SPACE-INFO  */
 
+html[b-nem8b9r9y9] {
+    background-image: url("/assets/technology/background-technology-desktop.jpg")
+}
+
 .home-body[b-nem8b9r9y9] {
     position: relative;
     height: 42%;
@@ -403,7 +403,11 @@ font-family: 'Bellefair', serif;
     width: 444px;
 }
 
-
+@media (max-width: 48rem) {
+    html[b-nem8b9r9y9] {
+        background-image: url("/wwwroot/assets/home/background-home-tablet.jpg")
+    }
+}
 /* _content/SpaceTourismWebSite/Pages/TechnologyComponent.razor.rz.scp.css */
 /* _content/SpaceTourismWebSite/Shared/MainLayout.razor.rz.scp.css */
 /* _content/SpaceTourismWebSite/Shared/NavBar.razor.rz.scp.css */
