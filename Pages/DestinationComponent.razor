@@ -1,6 +1,20 @@
 ﻿@page "/destinations"
 @using BlazorAnimate;
 
+<style type="text/css">
+    @@media only screen and (max-width: 48rem) {
+        html {
+            background-image: url("../assets/destination/background-destination-tablet.jpg");
+        }
+    }
+
+    @@media only screen and (max-width: 37rem) {
+        html {
+            background-image: url("../assets/destination/background-destination-mobile.jpg");
+        }
+    }
+</style>
+
 <PageTitle>Destinations</PageTitle>
 
 <NavBar />

@@ -6,10 +6,10 @@
     <div class="line"></div>
     <div class="NavRect" data-visible="false">
         <ul>
-            <li> <a href="/" @onclick="@(async () => { Home(); await ChangeBackground(); } )"> <span class="bold">00</span> <span>HOME</span> </a> </li>
-            <li> <a href="destinations" @onclick="@(async () => { Destination(); await ChangeBackground(); } )"> <span class="bold">01</span> <span>DESTINATION</span> </a> </li>
-            <li> <a href="crew-members" @onclick="@(async () => { Crew(); await ChangeBackground(); } )"> <span class="bold">02</span> <span>CREW</span> </a> </li>
-            <li> <a href="technologies" @onclick="@(async () => { Technology(); await ChangeBackground(); } )"> <span class="bold">03</span> <span>TECHNOLOGY</span> </a> </li>
+            <li> <a href="/" @onclick="Home"> <span class="bold">00</span> <span>HOME</span> </a> </li>
+            <li> <a href="destinations" @onclick="Destination"> <span class="bold">01</span> <span>DESTINATION</span> </a> </li>
+            <li> <a href="crew-members" @onclick="Crew"> <span class="bold">02</span> <span>CREW</span> </a> </li>
+            <li> <a href="technologies" @onclick="Technology"> <span class="bold">03</span> <span>TECHNOLOGY</span> </a> </li>
         </ul>
     </div>
     <button class="toggle-nav-icon" @onclick="ToggleNav" aria-controls="primary-navigation" aria-expanded="false" />
@@ -17,39 +17,68 @@
 
 @code {
     public string bgUrl = string.Empty;
-    Background htmlImg = new Background();
     private int screenSize;
 
     async Task ChangeBackground()
     {
-       screenSize = await JsRuntime.InvokeAsync<int>(identifier: "viewportWidth");
-       await JsRuntime.InvokeVoidAsync(identifier: "backgroundImgChange", bgUrl);
+        await JsRuntime.InvokeVoidAsync(identifier: "backgroundImgChange", bgUrl);
     }
 
+    async Task getWidth()
+    {
+        screenSize = await JsRuntime.InvokeAsync<int>(identifier: "viewportWidth");
+    }
 
     async Task ToggleNav()
     {
         await JsRuntime.InvokeVoidAsync(identifier: "toggleNav");
     }
 
-
-    public void Home()
+    async Task Home()
     {
-        bgUrl = htmlImg.CheckWidth(screenSize, "home");
+        await getWidth();
+        bgUrl = CheckWidth(screenSize, "home");
+        await ChangeBackground();
     }
 
-    public void Destination()
+    async Task Destination()
     {
-        bgUrl = htmlImg.CheckWidth(screenSize, "destination");
+        await getWidth();
+        bgUrl = CheckWidth(screenSize, "destination");
+        await ChangeBackground();
     }
 
-    public void Crew()
+    async Task Crew()
     {
-        bgUrl = htmlImg.CheckWidth(screenSize, "crew");
+        await getWidth();
+        bgUrl = CheckWidth(screenSize, "crew");
+        await ChangeBackground();
     }
 
-    public void Technology()
+    async Task Technology()
     {
-        bgUrl = htmlImg.CheckWidth(screenSize, "technology");
+        await getWidth();
+        bgUrl = CheckWidth(screenSize, "technology");
+        await ChangeBackground();
+    }
+
+    public string CheckWidth(int num, string page)
+    {
+        string url = string.Empty;
+        if (num > 768)
+        {
+            url = $"/assets/{page}/background-{page}-desktop.jpg";
+        }
+        if (num <= 768 && num > 592)
+        {
+            url = $"/assets/{page}/background-{page}-tablet.jpg";
+        }
+
+        if (num <= 592)
+        {
+            url = $"/assets/{page}/background-{page}-mobile.jpg";
+        }
+
+        return url;
     }
 }

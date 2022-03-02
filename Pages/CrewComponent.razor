@@ -1,6 +1,20 @@
 ﻿@page "/crew-members"
 @using BlazorAnimate;
 
+<style type="text/css">
+    @@media only screen and (max-width: 48rem) {
+        html {
+            background-image: url("../assets/crew/background-crew-tablet.jpg");
+        }
+    }
+
+    @@media only screen and (max-width: 37rem) {
+        html {
+            background-image: url("../assets/crew/background-crew-mobile.jpg");
+        }
+    }
+</style>
+
 <PageTitle>CrewComponent</PageTitle>
 
 <NavBar />

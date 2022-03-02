@@ -1,4 +1,23 @@
-﻿// NavBar
+﻿/*const window = document.querySelector('window');*/
+
+
+//window.addEventListener('resize', setImage);
+
+//function setImage() {
+//    let page = document.title.toLowerCase();
+//    let width = html.offsetWidth;
+//    if (width > 768) {
+//        html.style.backgroundImage = `/assets/${page}/background-${page}-desktop.jpg`;
+//    }
+//    if (width <= 768 && width > 597) {
+//        html.style.backgroundImage = `/assets/${page}/background-${page}-tablet.jpg`;
+//    }
+//    if (width <= 587) {
+//        html.style.backgroundImage = `/assets/${page}/background-${page}-mobile.jpg`;
+//    }
+//}
+
+// NavBar
 function btnOverlay() {
     const btn = document.querySelector('.explore-btn h5 a');
     let overlay = document.querySelector('.circle-overlay');
